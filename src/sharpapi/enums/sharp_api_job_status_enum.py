@@ -6,4 +6,3 @@ class SharpApiJobStatusEnum(Enum):
     PENDING = 'pending'
     FAILED = 'failed'
     SUCCESS = 'success'
-

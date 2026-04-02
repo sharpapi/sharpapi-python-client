@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "sharpapi-python-client"
-version = "1.0.2"
+version = "1.2.1"
 description = "SharpAPI.com Python SDK Client - AI-Powered Workflow Automation API."
 authors = ["Dawid Makowski <contact@sharpapi.com>"]
 license = "MIT"
@@ -14,8 +14,8 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.8"
-requests = ">=2.25.1"
+python = "^3.10"
+requests = ">=2.33.0"
 
 [build-system]
 requires = ["poetry-core"]

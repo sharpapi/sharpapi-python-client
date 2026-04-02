@@ -10,7 +10,7 @@ from .enums.sharp_api_job_type_enum import SharpApiJobTypeEnum
 
 
 class SharpApiService:
-    def __init__(self, api_key, api_base_url='https://sharpapi.com/api/v1', user_agent='SharpAPIPythonClient/1.2.0'):
+    def __init__(self, api_key, api_base_url='https://sharpapi.com/api/v1', user_agent='SharpAPIPythonClient/1.2.1'):
         if not api_key:
             raise ValueError('API key is required.')
         self.api_key = api_key

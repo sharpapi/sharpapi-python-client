@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "sharpapi-python-client"
-version = "1.2.1"
+version = "1.2.2"
 description = "SharpAPI.com Python SDK Client - AI-Powered Workflow Automation API."
 authors = ["Dawid Makowski <contact@sharpapi.com>"]
 license = "MIT"
@@ -16,6 +16,9 @@ packages = [
 [tool.poetry.dependencies]
 python = "^3.10"
 requests = ">=2.33.0"
+# Pin transitive dependency to patch Snyk vulnerabilities
+# (CVE-2026-44432 Decompression Bomb, CVE-2026-44431 Sensitive Info Disclosure)
+urllib3 = ">=2.7.0"
 
 [build-system]
 requires = ["poetry-core"]
